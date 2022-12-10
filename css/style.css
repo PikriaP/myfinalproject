@@ -1,0 +1,97 @@
+.navbar{
+    background: rgb(2,0,36);
+  background: radial-gradient(circle, rgba(2,0,36,1) 40%, rgba(120,120,125,1) 69%, rgba(0,212,255,1) 84%);
+    opacity: 80%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .logo {
+    font-size: 25px;
+    padding-top: 25px;
+    font-weight: 800;
+    color: rgb(245, 126, 205);
+  }
+  .ul-list li:nth-child(2) {
+    margin: 0 30px 0 30px;
+  }
+  .ul-list li:nth-child(4) {
+    margin: 0 30px 0 30px;
+  }
+  .ul-list{
+    display: flex;
+    text-decoration: none;
+  }
+  .nav {
+    font-size: 22px;
+    color:rgb(245, 126, 205);
+    font-style: italic;
+  }
+  .navigation {
+    padding-top: 15px;
+    font-size: 20px;
+    color: rgb(245, 126, 205);
+  }
+  .toggle-menu {
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    width: 40px;
+    height: 40px;
+    /* border: 1px outsetrgb(245, 126, 205); */
+    cursor: pointer;
+    display: none;
+  }
+  .line {
+    width: 70%;
+    height: 1px;
+    background-color: rgb(102, 17, 74);
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: all 0.8s linear;
+  }
+  .firstline {
+    top: 30%;
+  }
+  .thirdline {
+    top: 70%;
+  }
+  .activeBar .firstline {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  .activeBar .secondline {
+    display: none;
+    }
+  .activeBar .thirdline {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+  .navbar.toggle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(219, 217, 219);
+    width: 100%;
+    height: 100%;
+  }
+  .wrapper{
+    margin: 40px;
+  }
+  .form-wrapper {
+      box-shadow: rgb(102, 17, 74);
+      border-color: blueviolet;
+  }
+  
+  @media (max-width: 768px) {
+    .toggle-menu {
+        display:block;
+    }
+    .navigation {
+        display: none;
+    }
+  }
+  
