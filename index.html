@@ -8,33 +8,42 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <script defer src="./script.js"></script>
     <link rel="stylesheet" href="./styles/responsive.css">
+    <script defer src="./script.js"></script>
 </head>
 
 <body>
     <header>
-        <nav>
-            <a href="#" id="logo">Zetta Hotels</a>
-            <ul>
-                <li class="nav-items active"><a href="#">Home</a></li>
-                <li class="nav-items"><a href="#">Rooms</a></li>
-                <li class="nav-items"><a href="#">Restaurant</a></li>
-                <li class="nav-items"><a href="#">About Us</a></li>
-                <li class="nav-items"><a href="#">Blog</a></li>
-                <li class="nav-items"><a href="#">Contact</a></li>
-            </ul>
-            <div id="burger">
-                <span></span>
-                <span></span>
-                <span></span>
+        <div class="navbar">
+        <a class="logo" href="#">WOMEN   IN   TECH</a>
+    
+    <nav class="navigation" id="navbar">
+        <ul class="ul-list">
+            <li><a class="nav" href="#">Home</a></li>
+            <li><a class="nav" href="#">About us</a></li>
+            <li><a class="nav" href="#">News</a></li>
+            <li><a class="nav" href="#">Services</a></li>
+            <li><a class="nav" href="#">Contact</a></li>
+        </ul>
+    </nav>
+            <div class="toggle-menu" id="burgerBar">
+                <div class="line firstline"></div>
+                <div class="line secondline"></div>
+                <div class="line thirdline "></div>
             </div>
-        </nav>
+        </div>
         <h1>About Us</h1>
         <div class="part-of-header">
             <p>Home</p>
             <p>About Us</p>
+            
         </div>
+        <div class="search">
+            <input type="text" class="input" placeholder="Search...">
+            <button class="btn1">
+            <i class="fas fa-search"></i>
+            </button>
+            </div>
     </header>
     <section id="section1">
         <div id="right">
@@ -49,8 +58,27 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
                 ex ea commodo consequat.</p>
-            <button id=red-more>read more<img src="./assets/arrow.png" alt="arrow"></button>
-        </div>
+                <button id=red-more>read more<img src="./assets/arrow.png" alt="arrow"></button>
+                <div class="split-slideshow">
+                    <div class="slideshow">
+                      <div class="slider1">
+                        <div class="item">
+                          <img src="../assets/314692515_3423765697851516_3164598129560651796_n.jpg"/>
+                        </div>
+                        <div class="item">
+                          <img src="../assets/314692515_3423765697851516_3164598129560651796_n.jpg"/>
+                        </div>
+                        <div class="item">
+                          <img src="../assets/314692515_3423765697851516_3164598129560651796_n.jpg"/>
+                        </div>
+                        <div class="item">
+                          <img src="../assets/314692515_3423765697851516_3164598129560651796_n.jpg"/>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+            </div>
         <div id="left">
             <div id="upper">
                 <img src="./assets/img1.png" alt="image1">
@@ -63,14 +91,17 @@
 
     </section>
     <section id="section2">
+        
         <div id="title">
             <h3>ABOUT US</h3>
             <h4>We bring you the <br>
                 finest details</h4>
         </div>
+
+        
         <div id="flex">
             <div>
-                <div class="building"><img src="./assets/building.png" alt="building"></div>
+                <div class="building"><img src="../assets/building.png" alt="building"></div>
                 <h4>Free Wifi <br>
                     to stay connected</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
@@ -99,10 +130,12 @@
     <section id="section3">
         <div id="part-left">
             <div id="move-right">
+                <p>Our team</p>
+                <div class="main-wraper" id="main-wraper"></div>
                 <h4>Testimonials</h4>
                 <h5>We trust our customers
                     and they trust us too</h5>
-                <div class="author"><img src="./assets/marius.png" alt="author">Marius Ciocirlan</div>
+                <div class="author"><img src="./assets/girl 1.webp" alt="author">Marius Ciocirlan</div>
                 <p>I'm very glad I had the opportunity to visit this hotel. The stuff is very friendly and I will
                     definetly visit the hotel again next year.</p>
             </div>
@@ -121,13 +154,31 @@
             <img src="./assets/gallery3.png" alt="gallery-image3">
         </div>
     </section>
+    <section id="section5">
+        <div class="containerslider">
+            <div class="slideimage-container">
+                <img src="assets/feature-2-2.jpg" id="content1" class="active">
+                <img src="assets/316298210_645656787258966_6623749194125680978_n.jpg" id="content2">
+                <img src="assets/316735608_1448105996118949_2879975732420416601_n.jpg" id="content3">
+                <img src="assets/316043610_933670361351460_5333459546407657568_n.jpg" id="content4">
+                <p>woman in family</p>
+            </div>
+            <div class="dot-container">
+                <button onclick = "dot(1)"></button>
+                <button onclick = "dot(2)"></button>
+                <button onclick = "dot(3)"></button>
+                <button onclick = "dot(4)"></button>
+            </div>
+            <button id="prev" onclick="prev()"> &lt; </button>
+            <button id="next" onclick="next()"> &gt; </button>
+        </div>
+    </section>
     <footer>
         <div id="different-width">
             <div id="display-flex">
                 <div id="main-info">
-                    <h6>Zetta Hotels</h6>
-                    <p>Our hotel is an image of quality and profesionalism combined with hard work and precision. You
-                        can expect only the best services from our staff.</p>
+                    <h6>women in tech</h6>
+                    <p>women are awesame and they can do everything</p>
                     <div id="social">
                         <img src="./assets/facebook.svg" alt="facebook">
                         <img src="./assets/twitter.svg" alt="twitter">
@@ -155,13 +206,13 @@
                 <div id="contact">
                     <h6>Contact Info</h6>
                     <ul>
-                        <li><a href="#"><img src="./assets/mail.svg" alt="icon">example@yahoo.com</a></li>
-                        <li><a href="#"><img src="./assets/phone.svg" alt="icon">+0 320 422 4254</a></li>
-                        <li><a href="#"><img src="./assets/map.svg" alt="icon">Main Str Chicago Ilinois</a></li>
+                        <li><a href="#"><img src="./assets/mail.svg" alt="icon">piqriap@yahoo.com</a></li>
+                        <li><a href="#"><img src="./assets/phone.svg" alt="icon">+995577380822</a></li>
+                        <li><a href="#"><img src="./assets/map.svg" alt="icon">Gori, Georgia</a></li>
                     </ul>
                 </div>
             </div>
-            <p>Copyright ©2020 All rights reserved | This template is made with love by <span>Marian</span></p>
+            <p>Copyright ©2020 All rights reserved |Mmade by <span>PIKRIA</span></p>
         </div>
     </footer>
 
@@ -169,38 +220,3 @@
 </body>
 
 </html>
-</head>
-<body>
-    <header>
-        <div class="navbar">
-        <a class="logo" href="#">LOGO</a>
-    
-    <nav class="navigation" id="navbar">
-        <ul class="ul-list">
-            <li><a class="nav" href="#">Home</a></li>
-            <li><a class="nav" href="#">About us</a></li>
-            <li><a class="nav" href="#">News</a></li>
-            <li><a class="nav" href="#">Services</a></li>
-            <li><a class="nav" href="#">Contact</a></li>
-        </ul>
-    </nav>
-            <div class="toggle-menu" id="burgerBar">
-                <div class="line firstline"></div>
-                <div class="line secondline"></div>
-                <div class="line thirdline "></div>
-            </div>
-        </div>
-
-        <div class="wrapper">
-            <form action=" " class="form-wrapper"> 
-                <input type="text" class="input-blank">
-                <button class="add-btn">
-                    <i class="fa-duotone fa-comment-plus"></i>
-                    +
-                </button> 
-            </form>
-            <ul class="ul-items"></ul>
-            <button class="clearall"> Clear All</button>
-        </div>
-</body>
-</html>>
