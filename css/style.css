@@ -1,3 +1,14 @@
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+button,
+img {
+  cursor: pointer;
+}
 .navbar{
     padding: 50px;
     display: flex;
@@ -103,14 +114,59 @@
       background-size: cover;
       position: absolute;
   }
+  .main-wraper {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row;
+  flex-flow: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.avatarsclass {
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+.suname-name {
+  font-size: 20px;
+  font-family: "Heebo";
+  color: black;
+  text-align: center;
+}
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  margin-top: 10px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
   
-  #section2 {
+  /*#section2 {
       background-image: url(../assets/bg2.png);
       background-repeat: no-repeat;
       background-size: cover;
-  }
+  }*/
   
-  nav {
+  .nav {
       width: 80%;
       margin: 0 auto;
       display: flex;
@@ -119,7 +175,7 @@
       max-width: 2000px;
   }
   
-  nav ul {
+  .nav ul {
       display: flex;
   }
   
@@ -139,7 +195,7 @@
   }
   
   .nav-items:not(:last-child) {
-      margin-right: 50px;
+      margin-right: 10px;
   }
   
   #burger {
@@ -197,7 +253,7 @@
   #right h2 {
       font-size: 11px;
       font-weight: bold;
-      color: #5863f8;
+      color: white;
       margin-bottom: 17px;
   }
   
@@ -477,7 +533,7 @@
     margin: 0;
     box-sizing: border-box;
 }
-body{
+.body{
     height: 100%;
     background: linear-gradient(
         135deg,
@@ -487,11 +543,11 @@ body{
 }
 .containerslider{
     background-color: #e0dfdf;
-    width: 50%;
+    width: 45%;
     min-width: 320px;
     position: relative;
     transform: translate(-50%,-30%);
-    left: 70%;
+    left: 75%;
     top: 70%;
     border-radius: 3px;
     padding: 30px;
@@ -704,29 +760,6 @@ button{
         }
       }
       
-      .slideshow-text {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 100;
-        font-size: 80px;
-        width: 100vw;
-        text-align: center;
-        color: #fff;
-        font-family: 'Roboto Condensed', sans-serif;
-        font-weight: 100;
-        pointer-events: none;
-        text-transform: uppercase;
-        letter-spacing: 20px;
-        line-height: 0.8;
-        
-        @media (max-width: 767px) {
-          font-size: 40px;
-        }
-        
-      }
-      
       
       .the-most {
         position: fixed;
@@ -737,7 +770,7 @@ button{
         max-width: 200px;
         padding: 10px;
         
-        imgslide {
+      imgslide {
           max-width: 100%;
         }
       }
