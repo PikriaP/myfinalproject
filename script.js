@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 let navigation = document.getElementById("navbar");
 let burgerbar = document.getElementById("burgerBar");
 
