@@ -232,7 +232,7 @@ img{
     position: absolute;
     right: 0;
     bottom: 0;
-    width: 80%;
+    width: 100%;
 }
 
 /* ===== ABOUT =====*/
@@ -256,7 +256,7 @@ img{
     overflow: hidden;
 }
 .about__img img{
-    width: 60%;
+    width: 70%;
 }
 .about__subtitle{
     font-size: var(--h2-font-size);
@@ -579,4 +579,63 @@ img{
         width: 500px;
         right: 24%;
     }
+}
+/* slider */
+.sliderMainBox {
+    max-width: 800px;
+    height: 600px;    
+    position: relative;
+    margin: 60px auto;    
+}
+.LeftArrow {
+    top: 50%;
+    transform: translateY(-50%);
+    left: 40px;
+    position: absolute;
+}
+.RightArrow {
+    top: 50%;
+    transform: translateY(-50%);
+    right: 40px;
+    position: absolute;
+}
+.DotMain {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 40px;
+}
+.dots {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(166, 145, 186);
+    border-radius: 25%;
+    margin-left: 5px;
+}
+.active {
+    border: 1px solid black;
+}
+.BgImage {
+    width: 100%;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.Title {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: underline;   
+}
+
+
+/* form styling */
+.ErrorText {
+    color: red;
+    font-style: italic;
+}
+.formBox {
+    margin-bottom: 20px;
 }
