@@ -370,8 +370,8 @@ img {
 
 /* alider2 */
 .sliderMainBox {
-  max-width: 80%;
-  height: 600px;    
+  max-width: 70%;
+  height: 700px;    
   position: relative;
   margin: 60px auto;    
 }
@@ -398,7 +398,7 @@ img {
   width: 20px;
   height: 20px;
   background-color: #26A69A;
-  border-radius: 30%;
+  border-radius: 50%;
   margin-left: 5px;
 }
 .active {
@@ -406,8 +406,95 @@ img {
 }
 .BgImage {
   width: 100%;
-  height: 600px;
+  height: 700px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+/* validation */
+.ErrorText {
+  color: red;
+  font-style: italic;
+}
+.formBox {
+  margin-bottom: 20px;
+}
+
+/* our beneficiary */
+.team{
+  background-color: 26A69A;
+}
+.wraper-team{
+  width: 85%;
+  margin: 0 auto;
+  padding: 80px 0 80px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.hr-team{
+  width: 320px;
+  height: 3px;
+  background-color: white;
+}
+#post-wraper{
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.name-avatar-wraper{
+  width: 16.666%;
+  padding: 0 35px 0 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.user-name{
+  margin-top: 50px;
+  font-size: 17.7px;
+  font-family: 'Cormorant Garamond', serif;
+  color: white
+  text-align: center;
+}
+.avatar{
+  width: 120px;
+  height: 120px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-top: 10px;
+  border-radius: 20%;
+  cursor: pointer;
+}
+#loadmore{
+  width: 120px;
+  height: 50px;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgb(151, 32, 230)), to(rgb(19, 219, 245)));
+  background-image: -o-linear-gradient(left, rgb(32, 151, 230), rgb(31, 221, 255));
+  background-image: linear-gradient(90deg, #26A69A, rgb(31, 121, 255));
+  margin-top: 50px;
+  font-size: 15px;
+  border-radius:10%;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  color: white;
+  border-style: hidden;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+#loadmore:hover{
+  border-style: solid;
+  border-width: 2px;
+  border-color: white;
 }

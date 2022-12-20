@@ -9,6 +9,7 @@
 
 
         <!-- ===== CSS ===== -->
+        <link rel="stylesheet" href="./assets1/css/reset.css">
         <link rel="stylesheet" href="./assets/css/styles.css">
 
         <!-- ===== BOX ICONS ===== -->
@@ -21,6 +22,7 @@
 
         <!--========== CSS ==========-->
         <link rel="stylesheet" href="./assets1/css/styles.css">
+        
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
         <title>WOMEN in tech</title>
     </head>
@@ -224,7 +226,18 @@
                 </section>
                 <section class="portfolio section" id="portfolio">
                     <h2 class="section-title">our beneficiary</h2>
+                    <section class="team">
+                        <div class="wraper-team">
+                            <hr class="hr-team">
+                            <div id="post-wraper">
+                
+                            </div>
+                            <button id="loadmore">Load More</button>
+                        </div>
+                    </section>
                 </section>
+
+
                 
                 <!--===== CONTACT =====-->
                 <section class="contact section" id="contact">
@@ -241,17 +254,43 @@
                             <span class="contact__text">Gori, aghmasheneblis gamz. N22</span>
                             <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2088.067510447644!2d44.77749032355127!3d41.70605710997824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40440cce3a01fef7%3A0x2a75ae2128072d6!2s30%20Vasil%20Petriashvili%20Street%2C%20T&#39;bilisi!5e0!3m2!1sen!2sge!4v1664199593694!5m2!1sen!2sge"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
+                        <section>
 
-                        <form action="" class="contact__form">
-                            <div class="contact__inputs">
-                                <input type="text" placeholder="Name" class="contact__input">
-                                <input type="mail" placeholder="Email" class="contact__input">
-                            </div>
+                            <form action="" id="RegForm" method="POST">
+                                <div class="formBox">
+                                    <input type="text" name="UserName" id="username" placeholder="Username">
+                                    <p class="ErrorText" id="errors_UserName"></p>
+                                </div>
+                                <div class="formBox">
+                                    <input type="password" name="Password" id="password" placeholder="Enter Password">
+                                    <i class="fa-regular fa-eye" id="Icon"></i>                
+                                    <p class="ErrorText" id="errors_Password"></p>
+                                </div>
+                                <div class="formBox">
+                                    <input type="password" name="RepeatPassword" id="Repeatpassword" placeholder="Repeat your password">
+                                    <p class="ErrorText" id="errors_RepeatPassword"></p>
+                                </div>
+                                <div class="formBox">
+                                    <input type="checkbox" name="agreement" id="agreement" />
+                                    <label for="agreement"> I agree terms and conditions</label>
+                                    <p class="ErrorText" id="errors_agreement"></p>
+                                </div>
+                                <button type="submit">Send</button>
+                                <form action="" class="contact__form">
+                                    <div class="contact__inputs">
+                                        <input type="text" placeholder="Name" class="contact__input">
+                                        <input type="mail" placeholder="Email" class="contact__input">
+                                    </div>
+        
+                                    <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+        
+                                    <input type="submit" value="Enter" class="contact__button">
+                                </form>
+                            </form>
+                    
+                        </section>
 
-                            <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
 
-                            <input type="submit" value="Enter" class="contact__button">
-                        </form>
                         
                     </div>
                 </section>

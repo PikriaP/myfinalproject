@@ -350,7 +350,7 @@ img{
 
 /* ===== CONTACT =====*/
 .contact__container{
-    row-gap: 2rem;
+    row-gap: 1rem;
 }
 .contact__subtitle{
     font-size: var(--normal-font-size);
@@ -550,11 +550,11 @@ img{
 
     .contact__container{
         -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         justify-items: center;
     }
     .contact__form{
-        width: 380px;
+        width: 500px;
     }
 
     .footer__container{
@@ -584,6 +584,8 @@ img{
 
 
 /* form styling */
+
+
 .ErrorText {
     color: red;
     font-style: italic;
